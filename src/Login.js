@@ -33,15 +33,19 @@ const Login = () => {
 
     return (
         <>
-            <label>
-                Username: <input value={name} onChange={handleNameChange} type='text' name='username' />
-            </label>
-            <br />
-            <label>
-                Password: <input value={password} onChange={handlePasswordChange} type='password' name='password' />
-            </label>
-            <br />
-            <input type='submit' onClick={onSubmit} disabled={submitDisabled} id='login-button' />
+            <div>
+                <label>
+                    Username: <input value={name} onChange={handleNameChange} type='text' name='username' />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Password: <input value={password} onChange={handlePasswordChange} type='password' name='password' />
+                </label>
+            </div>
+            <div>
+                <input type='submit' onClick={onSubmit} disabled={submitDisabled} id='login-button' />
+            </div>
         </>
     )
 }
